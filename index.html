@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Sabbay Career</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#tips">Career Tips</a></li>
+            <li><a href="#employers">For Employers</a></li>
+        </ul>
+        <div class="profile-btn">👤</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Find your dream job.</h1>
+            <p class="hero-subtitle">What job are you looking for?</p>
+            
+            <div class="search-container">
+                <div class="search-inputs">
+                    <input type="text" class="search-input" placeholder="Job Seeker" id="jobCategory">
+                    <input type="text" class="search-input" placeholder="Recruiter" id="location">
+                </div>
+                <button class="search-btn" onclick="startExploring()">Start Exploring</button>
+            </div>
+        </div>
+
+        <div class="hero-illustration">
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="people-group">
+                <div class="person">👩</div>
+                <div class="person">👨‍🎨</div>
+                <div class="person">👩‍💼</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Jobs Section -->
+    <section class="popular-jobs" id="jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Jobs</h2>
+                <span class="trending-badge">Trending this week</span>
+            </div>
+
+            <div class="job-grid">
+                <div class="job-card" onclick="selectJob('Graphic Design')">
+                    <div class="job-icon">🎨</div>
+                    <h3 class="job-title">Digital Marketing</h3>
+                    <p class="job-subtitle">Creative & Visual</p>
+                </div>
+
+                <div class="job-card" onclick="selectJob('IT & Development')">
+                    <div class="job-icon">💻</div>
+                    <h3 class="job-title">IT & Development</h3>
+                    <p class="job-subtitle">Tech & Programming</p>
+                </div>
+
+                <div class="job-card" onclick="selectJob('Retail & Sales')">
+                    <div class="job-icon">🛍️</div>
+                    <h3 class="job-title">Graphic Design</h3>
+                    <p class="job-subtitle">Customer Service</p>
+                </div>
+
+                <div class="job-card" onclick="selectJob('Part-time Tutor')">
+                    <div class="job-icon">📚</div>
+                    <h3 class="job-title">Engineering</h3>
+                    <p class="job-subtitle">Education & Teaching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            
+            <div class="testimonial">
+                <div class="testimonial-avatar">👩</div>
+                <div class="testimonial-content">
+                    Thanks to Sabbay Career, I landed my first freelance gig while studying!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Steps -->
+    <section class="action-steps">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Get Started Today</h2>
+            
+            <div class="steps-grid">
+                <div class="step-card" onclick="createProfile()">
+                    <div class="step-icon">👤</div>
+                    <h3 class="step-title">Create Profile</h3>
+                    <p class="step-description">Build your professional profile and showcase your skills to potential employers.</p>
+                </div>
+
+                <div class="step-card" onclick="browseJobs()">
+                    <div class="step-icon">🔍</div>
+                    <h3 class="step-title">Browse Jobs</h3>
+                    <p class="step-description">Explore thousands of job opportunities tailored for Gen Z professionals.</p>
+                </div>
+
+                <div class="step-card" onclick="applyAndChat()">
+                    <div class="step-icon">💬</div>
+                    <h3 class="step-title">Apply & Chat</h3>
+                    <p class="step-description">Apply directly and chat with employers in real-time to land your dream job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
